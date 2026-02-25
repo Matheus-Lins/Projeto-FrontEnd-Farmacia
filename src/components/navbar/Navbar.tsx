@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <>
@@ -5,15 +7,15 @@ function Navbar() {
         <div className="container flex justify-between items-center mx-8">
           
           {/* Nome do Projeto */}
-          <span className="text-2xl font-bold tracking-wide">
-            FarmaLife
-          </span>
+          <Link to="/home" className="text-2xl font-bold tracking-wide hover:text-emerald-200">
+            Farmácia Vida
+          </Link>
 
           {/* Links */}
           <div className="flex gap-8 text-lg">
-            <span className="cursor-pointer hover:text-emerald-200">Home</span>
-            <span className="cursor-pointer hover:text-emerald-200">Listar Categorias</span>
-            <span className="cursor-pointer hover:text-emerald-200">Cadastrar Categoria</span>
+            <Link to="/home" className="hover:text-emerald-200">Home</Link>
+            <Link to="/categorias" className="hover:text-emerald-200">Listar Categorias</Link>
+            <Link to="/categorias/cadastrar" className="hover:text-emerald-200">Cadastrar Categoria</Link>
           </div>
 
         </div>

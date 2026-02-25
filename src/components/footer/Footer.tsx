@@ -1,14 +1,14 @@
 function Footer() {
+
+  let data = new Date().getFullYear();
+
   return (
-    <footer className="bg-[#0f766e] text-white py-6">
-      <div className="container mx-auto text-center">
+    <footer className="flex justify-center bg-[#0f766e] text-white py-4">
+      <div className="container flex flex-col items-center py-2">
 
-        <p className="font-semibold text-lg">
-          Farmácia Vida • Cuidando de Você
-        </p>
-
-        <p className="text-sm mt-1">
-          © 2026 — Todos os direitos reservados
+        {/* Texto principal */}
+        <p className="text-lg font-bold">
+          Farmácia Vida | Copyright: {data}
         </p>
       </div>
     </footer>
