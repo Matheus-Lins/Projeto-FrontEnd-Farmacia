@@ -3,92 +3,27 @@ import imagemHome from '../../assets/img/imagem-home.png';
 function Home() {
   return (
     <>
-      <div
-        style={{
-          backgroundColor: "#0f766e", // verde saúde
-          display: "flex",
-          justifyContent: "center",
-          minHeight: "100vh"
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            color: "white",
-            width: "100%",
-            maxWidth: "1280px",
-          }}
-        >
-          {/* Coluna esquerda */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
-              alignItems: "center",
-              justifyContent: "center",
-              paddingTop: "1rem",
-              paddingBottom: "1rem",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "3rem",
-                fontWeight: "bold",
-              }}
-            >
-              Seja Bem-Vindo!
+      <div className="bg-[#0f766e] flex justify-center min-h-screen">
+        <div className="container grid grid-cols-2 text-white items-center">
+          <div className="flex flex-col gap-4 items-center justify-center py-4">
+            <h2 className="text-5xl font-bold">
+              Seja Bem-Vinde!
             </h2>
-
-            <p
-              style={{
-                fontSize: "1.25rem",
-                textAlign: "center",
-                maxWidth: "400px",
-              }}
-            >
-              Cuidando da sua saúde com qualidade e confiança.
-              Encontre medicamentos, produtos de higiene e bem-estar
-              com praticidade.
+            <p className="text-xl">
+              Encontre aqui seus produtos farmaceurticos!
             </p>
 
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                gap: "1rem",
-              }}
-            >
-              <div
-                style={{
-                  borderRadius: "0.5rem",
-                  color: "white",
-                  border: "2px solid white",
-                  padding: "0.5rem 1rem",
-                  cursor: "pointer",
-                  transition: "0.3s",
-                }}
-              >
-                Ver Categorias
+            <div className="flex justify-around gap-4">
+              <div className="rounded text-white border-white border-solid border-2 py-2 px-4 cursor-pointer transition hover:bg-white/10">
+                Ver Produtos
               </div>
             </div>
           </div>
-
-          {/* Coluna direita */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center"
-            }}
-          >
+          <div className="flex justify-centerr">
             <img
               src={imagemHome}
-              alt="Imagem Página Home Farmácia"
-              style={{
-                width: "66%",
-              }}
+              alt="Imagem Página Home"
+              className="w-2/3"
             />
           </div>
         </div>
@@ -97,4 +32,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
