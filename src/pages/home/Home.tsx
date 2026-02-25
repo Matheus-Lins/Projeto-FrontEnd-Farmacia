@@ -5,7 +5,7 @@ function Home() {
     <>
       <div className="bg-[#0f766e] flex justify-center min-h-screen">
         <div className="container grid grid-cols-2 text-white items-center">
-          {/* Coluna esquerda */}
+
           <div className="flex flex-col gap-4 items-center justify-center py-4">
             <h2 className="text-5xl font-bold text-center">
               Seja Bem-Vindo!
@@ -22,7 +22,6 @@ function Home() {
             </div>
           </div>
 
-          {/* Coluna direita */}
           <div className="flex justify-center items-center">
             <img
               src={imagemHome}
