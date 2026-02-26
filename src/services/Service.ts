@@ -19,7 +19,7 @@ export async function postCategoria(categoria: Categoria) {
   return resposta.data;
 }
 export async function putCategoria(categoria: Categoria) {
-  const resposta = await api.put<Categoria>("/categorarias", categoria);
+  const resposta = await api.put<Categoria>("/categorias", categoria);
   return resposta.data;
 }
 
