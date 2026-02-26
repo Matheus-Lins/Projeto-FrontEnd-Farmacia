@@ -8,7 +8,7 @@ function Footer() {
       <div className="container flex flex-col items-center py-2">
 
         <p className="text-lg font-bold">
-          Farmácia Vida | Copyright: {data}
+          PharmaLife | Copyright: {data}
         </p>
       </div>
     </footer>

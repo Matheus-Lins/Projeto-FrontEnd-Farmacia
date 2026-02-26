@@ -7,7 +7,7 @@ function Navbar() {
         <div className="container flex justify-between items-center mx-8">
           
           <Link to="/home" className="text-2xl font-bold tracking-wide hover:text-emerald-200">
-            Farmácia Vida
+            PharmaLife
           </Link>
 
           <div className="flex gap-8 text-lg">
