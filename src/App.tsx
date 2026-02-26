@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home'
 import ListaCategorias from './components/categoria/listacategorias/ListaCategorias'
 import FormCategoria from './components/categoria/formcategoria/FormCategoria'
+import DeletarCategoria from './components/categoria/deletarcategoria/DeletarCategoria'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/categorias" element={<ListaCategorias />} />
             <Route path="/categorias/cadastrar" element={<FormCategoria />} />
             <Route path="/categorias/editar/:id" element={<FormCategoria />} />
+            <Route path="/categorias/deletar/:id" element={<DeletarCategoria />} />
           </Routes>
         </div>
         <Footer />

@@ -25,7 +25,7 @@ function CardCategoria({ Categoria }: CardCategoriaProps) {
         </Link>
 
         <Link
-          to=""
+          to={`/categorias/deletar/${Categoria.id}`} 
           className="w-full text-slate-100 bg-red-500 hover:bg-red-700 flex items-center justify-center py-2"
         >
           <button>Deletar</button>
